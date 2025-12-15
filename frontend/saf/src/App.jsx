@@ -1,5 +1,13 @@
+
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import AdminLogin from "./pages/Adminlogin"
 function App() {
-  return <h1>IT WORKS!!</h1>;
+  return (
+  <Router>
+      <Routes>
+        <Route path="/" element={<AdminLogin/>} />
+      </Routes>
+    </Router>)
 }
 
 export default App;
