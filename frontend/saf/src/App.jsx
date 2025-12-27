@@ -1,19 +1,18 @@
-
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AdminLogin from "./pages/Adminlogin"
 import Facultyauth from "./pages/Facultyauth";
 import FacultyRegister from "./pages/FacultyRegister";
+import RoleSelector from "./components/RoleSelector";
 
-function App() {
+export default function App() {
   return (
-  <Router>
+    <Router>
       <Routes>
-        <Route path="/" element={<h1>It works</h1>}/>
-        <Route path="/admin" element={<AdminLogin/>} />
-        <Route path="/login" element={<Facultyauth/>}/>
-        <Route path="/register" element={<FacultyRegister/>}/>
+        <Route path="/" element={<RoleSelector />} />
+        <Route path="/login" element={<Facultyauth />} />
+        <Route path="/register" element={<FacultyRegister />} />
+        <Route path="/admin" element={<AdminLogin />} />
       </Routes>
-    </Router>)
+    </Router>
+  );
 }
-
-export default App;

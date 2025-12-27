@@ -143,7 +143,7 @@ export default function FacultyLoginForm(){
                     </div>
 
                     <p className="text-center text-gray-600 text-sm mt-6">
-                        Don't have an account? <a href="#/register" className="text-indigo-600 hover:text-indigo-700 font-semibold">Register</a>
+                        Don't have an account? <a href="/register" className="text-indigo-600 hover:text-indigo-700 font-semibold">Register</a>
                     </p>
                 </div>
             </div>
